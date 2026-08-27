@@ -1,0 +1,186 @@
+/* =========================================================
+   LOGIN - DISEÑO MODERNO
+   Colores principales:
+   Cyan: #00D9FF
+   Azul: #0077CC
+   ========================================================= */
+
+/* Fondo principal */
+.root {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #071A2B,
+        #0A3554
+    );
+    -fx-font-family: "Segoe UI";
+}
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL / TARJETA
+   ========================================================= */
+
+.login-container {
+    -fx-background-color: rgba(255, 255, 255, 0.97);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 0, 0, 0.35),
+        25,
+        0.2,
+        0,
+        8
+    );
+}
+
+/* =========================================================
+   TÍTULOS Y ETIQUETAS
+   ========================================================= */
+
+.label {
+    -fx-text-fill: #1B2B3A;
+    -fx-font-size: 13px;
+}
+
+.login-title {
+    -fx-text-fill: #0A3554;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.login-subtitle {
+    -fx-text-fill: #718096;
+    -fx-font-size: 13px;
+}
+
+/* =========================================================
+   CAMPOS DE TEXTO
+   ========================================================= */
+
+.text-field,
+.password-field {
+    -fx-background-color: #F5F9FC;
+
+    -fx-border-color: #D4E2EC;
+    -fx-border-width: 1.2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+
+    -fx-padding: 10px 12px;
+
+    -fx-font-size: 13px;
+    -fx-text-fill: #1B2B3A;
+
+    -fx-prompt-text-fill: #9AAAB8;
+}
+
+/* Campo seleccionado */
+.text-field:focused,
+.password-field:focused {
+    -fx-background-color: white;
+
+    -fx-border-color: #00BFEF;
+    -fx-border-width: 2px;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 191, 239, 0.25),
+        8,
+        0.2,
+        0,
+        0
+    );
+}
+
+/* =========================================================
+   BOTÓN INICIAR SESIÓN
+   ========================================================= */
+
+.login-button {
+    -fx-background-color: linear-gradient(
+        to right,
+        #00D9FF,
+        #0077CC
+    );
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+
+    -fx-padding: 10px 24px;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 119, 204, 0.30),
+        8,
+        0.2,
+        0,
+        3
+    );
+}
+
+/* Hover */
+.login-button:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #00C7ED,
+        #006BB8
+    );
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 217, 255, 0.45),
+        12,
+        0.25,
+        0,
+        4
+    );
+}
+
+/* Click */
+.login-button:pressed {
+    -fx-background-color: #0066A8;
+    -fx-translate-y: 1px;
+}
+
+/* =========================================================
+   BOTÓN REGISTRARSE
+   ========================================================= */
+
+.register-button {
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #0077CC;
+
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+    -fx-border-color: #00BFEF;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+
+    -fx-padding: 9px 22px;
+
+    -fx-cursor: hand;
+}
+
+/* Hover */
+.register-button:hover {
+    -fx-background-color: #E8F9FF;
+
+    -fx-border-color: #0077CC;
+    -fx-text-fill: #005B99;
+}
+
+/* Click */
+.register-button:pressed {
+    -fx-background-color: #D5F3FC;
+}
